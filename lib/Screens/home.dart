@@ -97,9 +97,9 @@ class _HomeState extends State<Home> {
                         Container(
                           padding: const EdgeInsets.all(5),
                           decoration: BoxDecoration(
-                            color: AppColors.primary,
+                            color: controller.text.isEmpty? AppColors.primary:AppColors.secondary,
                             shape: BoxShape.circle,
-                            boxShadow: [AppShadow.shadow2],
+                            boxShadow: [controller.text.isEmpty? AppShadow.shadow0 : AppShadow.shadow3],
                             border: Border.all(
                                 color: AppColors.blancGrise,
                                 width: 2,
@@ -123,6 +123,11 @@ class _HomeState extends State<Home> {
                             controller: controller,
                             keyboardType: TextInputType.text,
                             style: AppTextStyle.bigFilledTexte,
+                            onChanged: (value){
+                              setState(() {
+
+                              });
+                            },
                             onSubmitted: (value) {},
                             cursorColor: AppColors.secondary,
                             cursorRadius: const Radius.circular(10),

@@ -58,7 +58,7 @@ class _ConnexionState extends State<Connexion> {
                         Gap(120.h),
                         Column(
                           children: [
-                            const Text("Si vous n'avez pas d'identifiants, veuillez demander à l'agent de santé à votre charge de vous en procurez.",textAlign: TextAlign.center,),
+                            const Text("Si vous n'avez pas d'identifiants, veuillez demander au professionnel de santé à votre charge de vous en procurer.",textAlign: TextAlign.center,),
                             const Gap(10),
                             Text("Cordialement,",style: TextStyle(fontWeight: FontWeight.w900,color: AppColors.primary),),
                           ],

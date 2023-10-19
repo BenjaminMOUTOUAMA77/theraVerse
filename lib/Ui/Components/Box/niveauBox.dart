@@ -61,7 +61,7 @@ class _NiveauBoxState extends State<NiveauBox> {
                             child: Text(
                               widget.nom,
                               style: AppTextStyle.buttonStyleTexte.copyWith(
-                                  color: AppColors.primary,
+                                  color: AppColors.secondary,
                                   overflow: TextOverflow.ellipsis),
                             )),
                       ],

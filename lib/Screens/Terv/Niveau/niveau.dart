@@ -68,7 +68,7 @@ class _TervNiveauState extends State<TervNiveau> {
                       Text(
                         "<< ",
                         style: AppTextStyle.buttonStyleTexte
-                            .copyWith(color: AppColors.secondary, fontSize: 10),
+                            .copyWith(color: AppColors.grisLitePlus, fontSize: 10),
                       ),
                       Text(
                         "Expériences",
@@ -80,7 +80,7 @@ class _TervNiveauState extends State<TervNiveau> {
                       Text(
                         " >>",
                         style: AppTextStyle.buttonStyleTexte
-                            .copyWith(color: AppColors.secondary, fontSize: 10),
+                            .copyWith(color: AppColors.grisLitePlus, fontSize: 10),
                       ),
                     ],
                   ),
@@ -114,6 +114,7 @@ class _TervNiveauState extends State<TervNiveau> {
                         context,
                         MaterialPageRoute(
                           builder: (BuildContext context) => const ExperienceVR(),
+                          fullscreenDialog: true,
                         ),
                       ),
                     );
